@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @pradeepa-13
 - 👀 I’m interested in coding and technical research
-- 🌱 I’m currently learning Python and front-end development
+- 🌱 I’m currently learning Python and machine learning
 - 💞️ I’m looking forward to developing innovative projects
 - 📫 How to reach me: email at pradeepa130904@gmail.com
 
