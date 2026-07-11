@@ -2,24 +2,35 @@ import os
 import sys
 import requests
 
-USERNAME = os.environ.get("GITHUB_REPOSITORY_OWNER", "NITISH28111")
 TOKEN = os.environ.get("GH_TOKEN")
+USERNAME = os.environ.get("GITHUB_REPOSITORY_OWNER", "")
 README_PATH = "README.md"
 START = "<!-- PROJECTS:START -->"
 END = "<!-- PROJECTS:END -->"
 
-headers = {"Accept": "application/vnd.github+json"}
-if TOKEN:
-    headers["Authorization"] = f"Bearer {TOKEN}"
+if not TOKEN:
+    print("GH_TOKEN is required to list owned, forked, and collaborator repos.")
+    sys.exit(1)
+
+headers = {
+    "Accept": "application/vnd.github+json",
+    "Authorization": f"Bearer {TOKEN}",
+}
 
 def fetch_repos():
     repos = []
     page = 1
     while True:
         r = requests.get(
-            f"https://api.github.com/users/{USERNAME}/repos",
+            "https://api.github.com/user/repos",
             headers=headers,
-            params={"per_page": 100, "page": page, "sort": "updated"},
+            params={
+                "per_page": 100,
+                "page": page,
+                "sort": "updated",
+                "affiliation": "owner,collaborator,organization_member",
+                "visibility": "public",
+            },
         )
         r.raise_for_status()
         batch = r.json()
@@ -27,12 +38,20 @@ def fetch_repos():
             break
         repos.extend(batch)
         page += 1
-    # skip only the profile repo itself (username/username) — forks are included
-    repos = [
-        r for r in repos
-        if r["name"].lower() != USERNAME.lower()
-    ]
-    return repos
+
+    # de-duplicate (a repo can match more than one affiliation) and drop
+    # the profile repo itself (username/username)
+    seen = set()
+    unique_repos = []
+    for r in repos:
+        if r["full_name"] in seen:
+            continue
+        seen.add(r["full_name"])
+        owner, name = r["full_name"].split("/", 1)
+        if name.lower() == owner.lower():
+            continue
+        unique_repos.append(r)
+    return unique_repos
 
 def get_languages(repo):
     try:
@@ -58,7 +77,13 @@ def build_table(repos):
         url = r["html_url"]
         desc = (r.get("description") or "—").replace("|", "-")
         langs = get_languages(r)
-        rows.append(f"| **[{name}]({url})** | {desc} | `{langs}` |")
+        owner = r["full_name"].split("/", 1)[0]
+        tag = ""
+        if owner.lower() != USERNAME.lower():
+            tag = " _(collab)_"
+        elif r.get("fork"):
+            tag = " _(fork)_"
+        rows.append(f"| **[{name}]({url})**{tag} | {desc} | `{langs}` |")
     return header + "\n".join(rows)
 
 def update_readme(table_md):
@@ -81,3 +106,4 @@ if __name__ == "__main__":
     table = build_table(repos)
     update_readme(table)
     print(f"Updated README with {len(repos)} repos.")
+
