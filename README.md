@@ -25,7 +25,11 @@ Detail-oriented computer science student with a strong foundation in artificial 
 ### Projects
 
 <!-- PROJECTS:START -->
-_Projects will appear here after the first Action run._
+| Project | Description | Languages |
+|---|---|---|
+| **[Hierarchical-Multi-Agent-RL-for-Adaptive-Congestion-Control-in-5G-MEC-Networks](https://github.com/pradeepa-13/Hierarchical-Multi-Agent-RL-for-Adaptive-Congestion-Control-in-5G-MEC-Networks)** | — | `Python, C++, Shell` |
+| **[monoped-rl](https://github.com/pradeepa-13/monoped-rl)** | — | `Python, CMake` |
+| **[ardupilot](https://github.com/pradeepa-13/ardupilot)** | ArduPlane, ArduCopter, ArduRover, ArduSub source | `C++, Python, C, Objective-C, Lua, HTML, MATLAB, Shell, Makefile, NASL, JavaScript, Assembly, OpenEdge ABL, CMake, PHP, Batchfile, Kotlin, CSS, Nasal, Roff, Jinja, PowerShell, Dockerfile, Gnuplot, Emacs Lisp` |
 <!-- PROJECTS:END -->
 
 <div align="center">
