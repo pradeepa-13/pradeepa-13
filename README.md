@@ -1,10 +1,28 @@
-- 👋 Hi, I’m @pradeepa-13
-- 👀 I’m interested in coding and technical research
-- 🌱 I’m currently learning Python and machine learning
-- 💞️ I’m looking forward to developing innovative projects
-- 📫 How to reach me: email at pradeepa130904@gmail.com
+<div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:9A0AF5&height=180&section=header&text=G.%20Pradeepa&fontSize=55&fontColor=FFFFFF&animation=fadeIn&fontAlignY=40&desc=Artificial%20Intelligence%20%7C%20Machine%20Learning&descAlignY=62&descSize=18&descColor=9A0AF5" alt="Header banner" width="100%"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=9A0AF5&center=true&vCenter=true&width=600&lines=Machine+Learning+%26+Deep+Learning;Natural+Language+Processing;Networking+%2F+5G+Systems" alt="Typing SVG" />
+<br/><br/>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-gpradeepa--cse--hons--aiml-9A0AF5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gpradeepa-cse-hons-aiml)
+[![Email](https://img.shields.io/badge/Email-g.pradeepa1309%40gmail.com-9A0AF5?style=flat-square&logo=gmail&logoColor=white)](mailto:g.pradeepa1309@gmail.com)
+</div>
 
-<!---
-pradeepa-13/pradeepa-13 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Detail-oriented computer science student with a strong foundation in artificial intelligence, machine learning, and networking — applying cross-disciplinary problem-solving skills to intelligent, secure, and data-driven systems.
+
+### Tech Stack
+
+![Python](https://img.shields.io/badge/-Python-000000?style=flat-square&logo=python)
+![PyTorch](https://img.shields.io/badge/-PyTorch-000000?style=flat-square&logo=pytorch)
+![TensorFlow](https://img.shields.io/badge/-TensorFlow-000000?style=flat-square&logo=tensorflow)
+![Keras](https://img.shields.io/badge/-Keras-000000?style=flat-square&logo=keras)
+![Scikit--Learn](https://img.shields.io/badge/-Scikit--Learn-000000?style=flat-square&logo=scikitlearn)
+![C++](https://img.shields.io/badge/-C++-000000?style=flat-square&logo=cplusplus)
+
+### Projects
+
+<!-- PROJECTS:START -->
+_Projects will appear here after the first Action run._
+<!-- PROJECTS:END -->
+
+<div align="center">
+<sub>Last synced automatically</sub>
+</div>
