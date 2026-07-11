@@ -27,9 +27,10 @@ Detail-oriented computer science student with a strong foundation in artificial 
 <!-- PROJECTS:START -->
 | Project | Description | Languages |
 |---|---|---|
+| **[Signature-Carving-and-Image-Restorer](https://github.com/NITISH28111/Signature-Carving-and-Image-Restorer)** _(collab)_ | Recovers deleted JPEG/PNG images from raw disk sectors via signature-based carving, then classifies and restores degraded (blurry/noisy) images using a fine-tuned ResNet-50 + MPRNet — all through a unified PyQt5 GUI for digital forensics and personal data recovery. | `Python, MATLAB` |
 | **[Hierarchical-Multi-Agent-RL-for-Adaptive-Congestion-Control-in-5G-MEC-Networks](https://github.com/pradeepa-13/Hierarchical-Multi-Agent-RL-for-Adaptive-Congestion-Control-in-5G-MEC-Networks)** | — | `Python, C++, Shell` |
 | **[monoped-rl](https://github.com/pradeepa-13/monoped-rl)** | — | `Python, CMake` |
-| **[ardupilot](https://github.com/pradeepa-13/ardupilot)** | ArduPlane, ArduCopter, ArduRover, ArduSub source | `C++, Python, C, Objective-C, Lua, HTML, MATLAB, Shell, Makefile, NASL, JavaScript, Assembly, OpenEdge ABL, CMake, PHP, Batchfile, Kotlin, CSS, Nasal, Roff, Jinja, PowerShell, Dockerfile, Gnuplot, Emacs Lisp` |
+| **[ardupilot](https://github.com/pradeepa-13/ardupilot)** _(fork)_ | ArduPlane, ArduCopter, ArduRover, ArduSub source | `C++, Python, C, Objective-C, Lua, HTML, MATLAB, Shell, Makefile, NASL, JavaScript, Assembly, OpenEdge ABL, CMake, PHP, Batchfile, Kotlin, CSS, Nasal, Roff, Jinja, PowerShell, Dockerfile, Gnuplot, Emacs Lisp` |
 <!-- PROJECTS:END -->
 
 <div align="center">
