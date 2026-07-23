@@ -20,7 +20,7 @@ Detail-oriented computer science student with a strong foundation in artificial 
 ![TensorFlow](https://img.shields.io/badge/-TensorFlow-000000?style=flat-square&logo=tensorflow)
 ![Keras](https://img.shields.io/badge/-Keras-000000?style=flat-square&logo=keras)
 ![Scikit--Learn](https://img.shields.io/badge/-Scikit--Learn-000000?style=flat-square&logo=scikitlearn)
-![C++](https://img.shields.io/badge/-C++-000000?style=flat-square&logo=cplusplus)
+
 
 ### Projects
 
